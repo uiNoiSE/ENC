@@ -1,0 +1,61 @@
+.intro {
+  position: relative;
+
+  &__inner {
+     position: relative;
+     z-index: 5;
+  }
+
+  &__text-wrap {
+    margin-bottom: 25px;
+  }
+
+  &__headline {
+    margin-bottom: 12.5px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+
+    color: $c-text-main;
+    mix-blend-mode: normal;
+  }
+
+  &__sub-headline {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+
+    color: $c-typography-types;
+    mix-blend-mode: normal;
+  }
+
+  &__media {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 195px;
+    height: 195px;
+
+    margin: 0 6px 30px 0;
+  }
+
+  &__showreel {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    right: -22.65px;
+
+    width: 431.31px;
+    height: 222.92px;
+  }
+}

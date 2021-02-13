@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  height: 55px;
+
+  padding: 0 14px;
+  margin-bottom: 40px;
+}
+
+.header {
+  &__logo {
+    height: 30px;
+
+    color: $c-main;
+  }
+
+  &__enc-logo {
+    width: 145px;
+  }
+
+  &__a-logo {
+    width: 125px;
+  }
+}
