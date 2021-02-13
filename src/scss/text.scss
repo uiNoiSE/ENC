@@ -1,0 +1,47 @@
+.text {
+  margin-bottom: 20px;
+
+  &--big-mb {
+    margin-bottom: 30px;
+  }
+
+  &__headline {
+    margin-bottom: 10px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+
+    color: $c-text-main;
+    mix-blend-mode: normal;
+  }
+
+  &__subheadline {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: $c-typography-types;
+    mix-blend-mode: normal;
+
+    &:first-of-type {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+
+  &__enc {
+    font-size: 8px;
+    line-height: 6px;
+    font-weight: 500;
+    letter-spacing: 0.695039px;
+    text-transform: uppercase;
+
+    color: $c-typography-types;
+
+    margin-bottom: 8px;
+  }
+}

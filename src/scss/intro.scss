@@ -6,33 +6,6 @@
      z-index: 5;
   }
 
-  &__text-wrap {
-    margin-bottom: 25px;
-  }
-
-  &__headline {
-    margin-bottom: 12.5px;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.02em;
-
-    color: $c-text-main;
-    mix-blend-mode: normal;
-  }
-
-  &__sub-headline {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 13px;
-
-    color: $c-typography-types;
-    mix-blend-mode: normal;
-  }
-
   &__media {
     display: flex;
     justify-content: space-between;

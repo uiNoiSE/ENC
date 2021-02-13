@@ -1,0 +1,36 @@
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 40px;
+
+  background-color: $c-mint;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  &__media {
+    width: 263px;
+    align-self: center;
+
+    margin-bottom: 20px;
+    z-index: 1;
+
+    & > img {
+      filter: drop-shadow(0px 0px 140.155px rgba(141, 166, 172, 0.5));
+    }
+  }
+
+  &__spot {
+      position: absolute;
+      left: 164px;
+      top: 33px;
+
+      width: 258px;
+      height: 252px;
+  }
+}
