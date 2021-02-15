@@ -24,7 +24,7 @@
     font-size: 12px;
     line-height: 17px;
 
-    color: $c-typography-types;
+    color: $c-typography;
     mix-blend-mode: normal;
 
     &:first-of-type {
@@ -40,7 +40,7 @@
     letter-spacing: 0.695039px;
     text-transform: uppercase;
 
-    color: $c-typography-types;
+    color: $c-typography;
 
     margin-bottom: 8px;
   }

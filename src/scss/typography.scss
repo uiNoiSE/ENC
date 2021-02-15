@@ -1,0 +1,62 @@
+.typography {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: $c-typography-bg;
+
+  &__inner {
+    & > * {
+      color: $c-typography;
+    }
+  }
+
+  &__weights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 10px;
+
+    &-item {
+      font-size: 12px;
+      line-height: 17px;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: $c-typography;
+
+      opacity: 0.5;
+
+      &--bold {
+        font-weight: bold;
+      }
+
+      &--medium {
+        font-weight: 500;
+      }
+
+      &--regular {
+        font-weight: normal;
+      }
+    }
+  }
+
+  &__headline {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__fontname {
+    font-size: 32px;
+    color: $c-main;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+
+  &__font-showcase {
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 139.5%;
+
+    margin-bottom: 20px;
+  }
+}
