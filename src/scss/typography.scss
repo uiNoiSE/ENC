@@ -1,9 +1,14 @@
 .typography {
+  position: relative;
+
   padding-top: 40px;
   padding-bottom: 20px;
   background-color: $c-typography-bg;
 
   &__inner {
+    position: relative;
+    z-index: 1;
+
     & > * {
       color: $c-typography;
     }
@@ -58,5 +63,13 @@
     line-height: 139.5%;
 
     margin-bottom: 20px;
+  }
+
+  &__spot {
+    position: absolute;
+    top: 11px;
+    left: -220px;
+
+    width: fit-content;
   }
 }
