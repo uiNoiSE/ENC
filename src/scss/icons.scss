@@ -3,20 +3,15 @@
 
   &__media {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     row-gap: 20px;
-    column-gap: 40px;
+    column-gap: 20px;
   }
 
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    & > img {
-      width: 80px;
-      height: 100px;
-    }
   }
 }
