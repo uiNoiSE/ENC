@@ -1,0 +1,54 @@
+.logo {
+  padding: 0;
+
+  &__inner {
+    display: grid;
+    grid-template-areas:
+      "text"
+      "classic"
+      "leaves"
+      "eng-logo";
+  }
+
+  &__text {
+    background-color: $c-white;
+    grid-area: text;
+
+    padding: 40px 15px 0 15px;
+  }
+
+  &__eng-logo {
+    grid-area: eng-logo;
+
+    background-color: $c-main;
+    color: $c-white;
+  }
+
+  &__leaves {
+    grid-area: leaves;
+
+    background-color: $c-white;
+    color: $c-main;
+  }
+
+  &__classic {
+    grid-area: classic;
+
+    background-color: $c-main;
+    color: $c-white;
+  }
+
+  &__item {
+    display: flex;
+    place-content: center;
+
+    &:not(:first-of-type) {
+      padding: 30px 0;
+    }
+
+    & > .svg-icon {
+      height: 45px;
+      width: fit-content;
+    }
+  }
+}
