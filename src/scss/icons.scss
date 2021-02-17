@@ -1,5 +1,7 @@
 .icons {
-  &__inner {}
+  &__inner {
+    position: relative;
+  }
 
   &__media {
     display: grid;
