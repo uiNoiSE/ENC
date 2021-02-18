@@ -1,0 +1,92 @@
+footer {
+  position: relative;
+  overflow: hidden;
+
+  padding: 40px 15px 20px 15px;
+}
+
+.footer {
+  &__inner {
+    position: relative;
+    z-index: 5;
+
+    display: grid;
+    grid-template-areas:
+      "text--big ."
+      "text--small ."
+      "img heart";
+  }
+
+  &__text {
+    font-weight: bold;
+
+    &--small {
+      font-size: 20px;
+      color: $c-typography;
+
+      grid-area: text--small;
+      margin-bottom: 20px;
+    }
+
+    &--big {
+      font-size: 42px;
+      color: $c-text-main;
+      text-transform: uppercase;
+
+      grid-area: text--big;
+    }
+
+    &-wrap {
+      grid-area: text;
+    }
+  }
+
+  &__heart {
+    grid-area: heart;
+    
+    width: 48px;
+    height: 48px;
+
+    animation: beat 2s ease-in-out infinite;
+
+    @keyframes beat {
+      40% {
+        transform:scale(1.2);
+      }
+
+      50% {
+        transform:scale(1);
+      }
+
+      80% {
+        transform:scale(1.2);
+      }
+
+      90% {
+        transform:scale(1);
+      }
+    }
+  }
+
+  &__img {
+    grid-area: img;
+
+    display: flex;
+    place-content: center;
+
+    height: 195px;
+
+    & > img {
+      width: 185px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    right: -22.65px;
+
+    width: 431.31px;
+    height: 222.92px;
+  }
+}
