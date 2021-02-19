@@ -42,12 +42,14 @@ footer {
   }
 
   &__heart {
-    grid-area: heart;
+    position: relative;
+    right: 10px;
     
     width: 48px;
     height: 48px;
-
+    
     animation: beat 2s ease-in-out infinite;
+    grid-area: heart;
 
     @keyframes beat {
       40% {
