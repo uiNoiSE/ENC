@@ -63,11 +63,14 @@
     margin-bottom: 20px;
   }
 
-  &__spot {
+  &__blob {
     position: absolute;
-    top: 11px;
-    left: -220px;
+    left: -90px;
+    top: 33px;
 
-    width: fit-content;
+    width: 258px;
+    height: 252px;
+
+    color: $c-white;
   }
 }

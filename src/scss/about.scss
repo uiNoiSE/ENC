@@ -23,12 +23,14 @@
     }
   }
 
-  &__spot {
+  &__blob {
       position: absolute;
       right: -102px;
       top: 33px;
 
       width: 258px;
       height: 252px;
+
+      color: $c-white;
   }
 }

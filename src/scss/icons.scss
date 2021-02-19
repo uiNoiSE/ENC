@@ -1,6 +1,7 @@
 .icons {
   &__inner {
     position: relative;
+    z-index: 1;
   }
 
   &__media {
@@ -15,5 +16,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &__blob {
+    position: absolute;
+    right: -90px;
+    top: 33px;
+
+    width: 258px;
+    height: 252px;
+
+    color: $c-mint;
   }
 }

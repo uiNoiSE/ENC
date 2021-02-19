@@ -1,4 +1,9 @@
 .illustrations {
+    &__inner {
+        position: relative;
+        z-index: 1;
+    }
+    
     &__media {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -9,9 +14,20 @@
     &__img {
         display: flex;
         align-items: flex-start;
-        
+
         &:nth-child(odd) {
             padding-bottom: 21px;
         }
+    }
+
+    &__blob {
+        position: absolute;
+        right: -90px;
+        top: 33px;
+
+        width: 258px;
+        height: 252px;
+
+        color: $c-mint;
     }
 }
