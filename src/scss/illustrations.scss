@@ -3,12 +3,16 @@
         position: relative;
         z-index: 1;
     }
-    
+
     &__media {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+
+        @media ($m-s) {
+            gap: 30px;
+        }
     }
 
     &__img {
@@ -18,6 +22,10 @@
         &:nth-child(odd) {
             padding-bottom: 21px;
         }
+
+        @media ($m-s) {
+        
+        max-height: 300px;}
     }
 
     &__blob {
@@ -29,5 +37,10 @@
         height: 252px;
 
         color: $c-mint;
+
+        @media ($m-s) {
+            width: 400px;
+            height: 400px;
+        }
     }
 }
