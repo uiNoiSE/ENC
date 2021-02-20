@@ -1,18 +1,26 @@
 .fullpage {
   padding-top: 60px;
+
   &__inner {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, auto);
+
+    & > .text {
+      @media ($m-s) {
+        margin-bottom: 40px;
+      }
+    }
   }
 
   &__img {
     position: relative;
     z-index: 5;
+    grid-column: 1;
 
     &-1 {
-      grid-column: 1;
       grid-row: 2;
+
       & > img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -20,43 +28,35 @@
     }
 
     &-2 {
-      grid-column: 1;
       grid-row: 3;
     }
 
     &-3 {
-      grid-column: 1;
       grid-row: 4;
     }
 
     &-4 {
-      grid-column: 1;
       grid-row: 5;
     }
 
     &-5 {
-      grid-column: 1;
       grid-row: 6;
     }
 
     &-6 {
-      grid-column: 1;
       grid-row: 7;
     }
 
     &-7 {
-      grid-column: 1;
       grid-row: 8;
     }
 
     &-8 {
-      grid-column: 1;
       grid-row: 9;
     }
 
     &-9 {
       position: relative;
-      grid-column: 1;
       grid-row: 10;
 
       &::after {
@@ -80,7 +80,6 @@
 
   &__shadow {
     grid-area: shadow;
-    // position: absolute;
     z-index: 1;
 
     background-color: #f4f8fb;
