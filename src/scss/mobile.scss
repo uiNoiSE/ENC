@@ -9,7 +9,7 @@
   &__media {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   &__photo {
@@ -17,6 +17,14 @@
 
     &:last-of-type {
       padding-top: 60px;
+    }
+
+    @media ($m-s) {
+      width: 35%;
+
+      &:last-of-type {
+        padding-top: 150px;
+      }
     }
   }
 
@@ -29,5 +37,10 @@
     height: 252px;
 
     color: $c-white;
+
+    @media ($m-s) {
+      width: 400px;
+      height: 400px;
+    }
   }
 }

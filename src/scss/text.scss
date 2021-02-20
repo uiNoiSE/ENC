@@ -25,11 +25,19 @@
     color: $c-text-main;
     mix-blend-mode: normal;
 
+    & > br {
+      display: none;
+    }
+
     @media ($m-s) {
       margin-bottom: 25px;
 
       font-size: 55.9302px;
       line-height: 71px;
+
+      & > br {
+        display: inline-flex;
+      }
     }
   }
 
