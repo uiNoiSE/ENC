@@ -28,6 +28,11 @@
 
       opacity: 0.5;
 
+      @media ($m-s) {
+        font-size: 18px;
+        line-height: 71px;
+      }
+
       &--bold {
         font-weight: bold;
       }
@@ -45,6 +50,13 @@
   &__headline {
     font-size: 15px;
     margin-bottom: 10px;
+
+    @media ($m-s) {
+      margin-bottom: 30px;
+
+      font-size: 36px;
+      line-height: 43px;
+    }
   }
 
   &__fontname {
@@ -53,6 +65,13 @@
     font-weight: 900;
     letter-spacing: -0.02em;
     margin-bottom: 10px;
+
+    @media ($m-s) {
+      margin-bottom: 30px;
+
+      font-size: 96px;
+      line-height: 79px;
+    }
   }
 
   &__font-showcase {
@@ -61,6 +80,28 @@
     line-height: 139.5%;
 
     margin-bottom: 20px;
+
+    & > br {
+      display: none;
+    }
+
+    @media ($m-s) {
+      margin-bottom: 40px;
+
+      font-size: 36px;
+      line-height: 50px;
+
+      & > br {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__media {
+    @media ($m-s) {
+      height: 300px;
+      margin-top: 35px;
+    }
   }
 
   &__blob {
@@ -72,5 +113,10 @@
     height: 252px;
 
     color: $c-white;
+
+    @media ($m-s) {
+      width: 400px;
+      height: 400px;
+    }
   }
 }
