@@ -134,6 +134,7 @@ module.exports = (env, argv) => {
       new CopyWebpackPlugin({
         patterns: [
           { from: "src/img/", to: "assets/img/" },
+          { from: "src/fav/", to: "assets/fav/" },
           // {from: 'src/fonts/', to: 'assets/fonts/',}
         ],
       }),
