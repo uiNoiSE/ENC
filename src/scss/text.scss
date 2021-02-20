@@ -1,8 +1,16 @@
 .text {
   margin-bottom: 20px;
 
+  @media ($m-s) {
+    margin-bottom: 0;
+  }
+
   &--big-mb {
     margin-bottom: 30px;
+
+    @media ($m-s) {
+      margin-bottom: 40px;
+    }
   }
 
   &__headline {
@@ -16,6 +24,13 @@
 
     color: $c-text-main;
     mix-blend-mode: normal;
+
+    @media ($m-s) {
+      margin-bottom: 25px;
+
+      font-size: 55.9302px;
+      line-height: 71px;
+    }
   }
 
   &__subheadline {
@@ -27,9 +42,19 @@
     color: $c-typography;
     mix-blend-mode: normal;
 
+    @media ($m-s) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
     &--small {
       font-size: 10px;
       line-height: 13px;
+
+      @media ($m-s) {
+        font-size: 18.6434px;
+        line-height: 28px;
+      }
     }
   }
 
@@ -43,5 +68,12 @@
     color: $c-typography;
 
     margin-bottom: 8px;
+
+    @media ($m-s) {
+      margin-bottom: 20px;
+
+      font-size: 9.3217px;
+      line-height: 14px;
+    }
   }
 }
