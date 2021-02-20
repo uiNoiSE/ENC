@@ -10,12 +10,24 @@
     grid-template-rows: auto;
     row-gap: 20px;
     column-gap: 20px;
+
+    @media ($m-s) {
+      margin-top: 40px;
+
+      column-gap: 35px;
+      row-gap: 60px;
+    }
   }
 
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media ($m-s) {
+      width: auto;
+      height: 150px;
+    }
   }
 
   &__blob {
@@ -27,5 +39,10 @@
     height: 252px;
 
     color: $c-mint;
+
+    @media ($m-s) {
+      width: 400px;
+      height: 400px;
+    }
   }
 }
