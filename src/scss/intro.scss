@@ -1,6 +1,10 @@
 .intro {
   position: relative;
 
+  @media ($m-mm) {
+    padding: 20px 60px 60px;
+  }
+
   &__inner {
     position: relative;
     z-index: 5;

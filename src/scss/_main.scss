@@ -22,6 +22,10 @@ section {
     @media ($m-s) {
         padding: 60px 40px 60px;
     }
+
+    @media ($m-mm) {
+        padding: 60px 60px 60px;
+      }
 }
 
 img {
