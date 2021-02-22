@@ -8,9 +8,19 @@
   &__inner {
     position: relative;
     z-index: 5;
+
+    display: grid;
+    grid-template-areas:
+      "text text"
+      "showreel img";
+
+    & > .text {
+      grid-area: text;
+    }
   }
 
   &__media {
+    grid-area: img;
     display: flex;
     justify-content: space-between;
   }
@@ -19,7 +29,7 @@
     width: 195px;
     height: 195px;
 
-    margin: 0 6px 30px 0;
+    margin: 0 -20px 20px 0;
 
     @media ($m-s) {
       width: 300px;
@@ -28,6 +38,8 @@
   }
 
   &__showreel {
+    grid-area: showreel;
+    display: flex;
     width: 60px;
     height: 60px;
 
