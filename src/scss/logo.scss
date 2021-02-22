@@ -12,6 +12,15 @@
     @media ($m-s) {
       grid-template-rows: 2fr repeat(3, 1fr);
     }
+
+    @media ($m-mm) {
+      grid-template-rows: repeat(3, 1fr );
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "text classic"
+        "text leaves"
+        "text eng-logo";
+    }
   }
 
   &__text {
