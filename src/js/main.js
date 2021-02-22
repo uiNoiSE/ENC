@@ -1,12 +1,12 @@
 import AOS from "aos";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 
 import { spline } from "@georgedoescode/spline";
 import SimplexNoise from "simplex-noise";
 
-AOS.init({
+/* AOS.init({
   once: true,
-});
+}); */
 
 // our <path> element
 var path = document.querySelector('.blob-parent > path');

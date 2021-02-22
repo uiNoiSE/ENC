@@ -4,19 +4,36 @@
   &__inner {
     position: relative;
     z-index: 1;
+
+    @media ($m-mm) {
+      display: grid;
+      grid-template-columns: 525px 1fr;
+    }
   }
 
   &__media {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   &__photo {
     width: 40%;
 
+    &:not(last-of-type) {
+      filter: drop-shadow(0px 0px 150px rgba(141, 166, 172, 0.5));
+    }
+
     &:last-of-type {
       padding-top: 60px;
+    }
+
+    @media ($m-s) {
+      width: 35%;
+
+      &:last-of-type {
+        padding-top: 150px;
+      }
     }
   }
 
@@ -29,5 +46,10 @@
     height: 252px;
 
     color: $c-white;
+
+    @media ($m-s) {
+      width: 400px;
+      height: 400px;
+    }
   }
 }
