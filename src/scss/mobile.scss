@@ -4,6 +4,11 @@
   &__inner {
     position: relative;
     z-index: 1;
+
+    @media ($m-mm) {
+      display: grid;
+      grid-template-columns: 525px 1fr;
+    }
   }
 
   &__media {
