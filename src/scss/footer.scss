@@ -7,6 +7,10 @@ footer {
   @media ($m-s) {
     padding: 60px 40px 60px;
   }
+
+  @media ($m-mm) {
+    padding: 100px 60px;
+  }
 }
 
 .footer {
@@ -28,6 +32,16 @@ footer {
         "img .";
 
       grid-template-columns: 1fr 320px;
+    }
+
+    @media ($m-mm) {
+      grid-template-areas:
+        "img text--big"
+        "img text--small"
+        "img heart"
+        "img .";
+
+      grid-template-columns: 500px 320px;
     }
   }
 
@@ -113,11 +127,19 @@ footer {
       height: 300px;
     }
 
+    @media ($m-s) {
+      height: 350px;
+    }
+
     & > img {
       width: 185px;
 
       @media ($m-s) {
         width: 300px;
+      }
+
+      @media ($m-mm) {
+        width: 500px;
       }
     }
   }
