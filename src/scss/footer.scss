@@ -3,6 +3,10 @@ footer {
   overflow: hidden;
 
   padding: 40px 15px 20px 15px;
+
+  @media ($m-s) {
+    padding: 60px 40px 60px;
+  }
 }
 
 .footer {
@@ -15,6 +19,16 @@ footer {
       "text--big ."
       "text--small ."
       "img heart";
+
+    @media ($m-s) {
+      grid-template-areas:
+        "img text--big"
+        "img text--small"
+        "img heart"
+        "img .";
+
+      grid-template-columns: 1fr 320px;
+    }
   }
 
   &__text {
@@ -26,6 +40,10 @@ footer {
 
       grid-area: text--small;
       margin-bottom: 20px;
+
+      @media ($m-s) {
+        font-size: 34px;
+      }
     }
 
     &--big {
@@ -34,6 +52,13 @@ footer {
       text-transform: uppercase;
 
       grid-area: text--big;
+
+      @media ($m-s) {
+        margin-bottom: 16px;
+
+        font-size: 64px;
+        line-height: 60px;
+      }
     }
 
     &-wrap {
@@ -44,28 +69,34 @@ footer {
   &__heart {
     position: relative;
     right: 10px;
-    
+
     width: 48px;
     height: 48px;
-    
-    animation: beat 2s ease-in-out infinite;
-    grid-area: heart;
 
-    @keyframes beat {
-      40% {
-        transform:scale(1.2);
-      }
+    @media ($m-s) {
+      margin-left: auto;
+    }
 
-      50% {
-        transform:scale(1);
-      }
+    & > img {
+      animation: beat 2s ease-in-out infinite;
+      grid-area: heart;
 
-      80% {
-        transform:scale(1.2);
-      }
+      @keyframes beat {
+        40% {
+          transform: scale(1.2);
+        }
 
-      90% {
-        transform:scale(1);
+        50% {
+          transform: scale(1);
+        }
+
+        80% {
+          transform: scale(1.2);
+        }
+
+        90% {
+          transform: scale(1);
+        }
       }
     }
   }
@@ -78,8 +109,16 @@ footer {
 
     height: 195px;
 
+    @media ($m-s) {
+      height: 300px;
+    }
+
     & > img {
       width: 185px;
+
+      @media ($m-s) {
+        width: 300px;
+      }
     }
   }
 
@@ -90,5 +129,13 @@ footer {
 
     width: 431.31px;
     height: 222.92px;
+
+    @media ($m-s) {
+      bottom: -5px;
+      right: 0;
+
+      width: 100%;
+      height: auto;
+    }
   }
 }
