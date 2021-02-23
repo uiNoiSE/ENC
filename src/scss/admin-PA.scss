@@ -10,6 +10,30 @@
     & > .text {
       margin-bottom: 0px;
     }
+
+    @media ($m-l) {
+      grid-template-areas:
+        "img--big text"
+        "img--big img--small";
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+
+      & > .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-bottom: 20px;
+
+        & > .text__headline {
+          line-height: 52px;
+        }
+
+        & > * {
+          width: 495px;
+        }
+      }
+    }
   }
 
   &__img {

@@ -8,6 +8,22 @@
       "img--small";
     row-gap: 20px;
 
+    @media ($m-l) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+      row-gap: 40px;
+      grid-template-areas: 
+      "text img--big"
+      "img--big-2 img--big"
+      "img--big-2 img--small";
+
+      & > .text {
+        & > .text__subheadline {
+          width: 495px;
+        }
+      }
+    }
+
     & > .text {
       margin-bottom: 0px;
     }

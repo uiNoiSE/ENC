@@ -12,7 +12,7 @@
         "img--big text"
         "img--big img--small";
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 80px;
+      column-gap: 80px;
 
       & > .text {
         display: flex;
