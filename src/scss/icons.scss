@@ -1,4 +1,9 @@
 .icons {
+  @media ($m-xl) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  
   &__inner {
     position: relative;
     z-index: 1;
@@ -44,6 +49,10 @@
     @media ($m-s) {
       width: auto;
       height: 150px;
+    }
+
+    @media ($m-xl) {
+      height: 170px;
     }
   }
 
