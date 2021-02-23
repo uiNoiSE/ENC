@@ -16,6 +16,16 @@
 
     & > .text {
       grid-area: text;
+
+      @media ($m-l) {
+        margin-top: 65px;
+      }
+    }
+
+    @media ($m-l) {
+      grid-template-areas:
+        "text img"
+        "showreel img";
     }
   }
 
@@ -34,6 +44,11 @@
     @media ($m-s) {
       width: 300px;
       height: 300px;
+    }
+
+    @media ($m-l) {
+      width: 500px;
+      height: 500px;
     }
   }
 
@@ -63,6 +78,10 @@
 
       width: 100%;
       height: auto;
+    }
+
+    @media ($m-l) {
+      width: 80%;
     }
   }
 }
