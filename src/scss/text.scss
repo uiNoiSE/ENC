@@ -13,6 +13,21 @@
     }
   }
 
+  &--desktop {
+    display: none;
+
+    & > .text__headline {
+      margin-bottom: 18px;
+    }
+
+    @media ($m-l) { 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 0 !important;
+    }
+  }
+
   &__headline {
     margin-bottom: 10px;
 
@@ -34,6 +49,12 @@
       & > br {
         display: inline-flex;
       }
+    }
+
+    &--small {
+      font-size: 36px;
+      line-height: 64px;
+      letter-spacing: -0.01em;
     }
   }
 

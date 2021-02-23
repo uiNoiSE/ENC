@@ -1,6 +1,10 @@
 .fullpage {
   padding-top: 60px;
 
+  @media ($m-l) { 
+    padding: 120px 60px 60px;
+  }
+
   &__inner {
     display: grid;
     grid-template-columns: 1fr;
@@ -10,6 +14,17 @@
       @media ($m-s) {
         margin-bottom: 40px;
       }
+
+      @media ($m-l) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    @media ($m-l) {
+      grid-template-columns: 566px auto;
+      grid-column-gap: 60px;
     }
   }
 
@@ -18,8 +33,16 @@
     z-index: 5;
     grid-column: 1;
 
+    @media ($m-l) {
+      grid-column: 2;
+    }
+
     &-1 {
       grid-row: 2;
+
+      @media ($m-l) {
+        grid-row: 1;
+      }
 
       & > img {
         border-top-left-radius: 10px;
@@ -29,35 +52,60 @@
 
     &-2 {
       grid-row: 3;
+      @media ($m-l) {
+        grid-row: 2;
+      }
     }
 
     &-3 {
       grid-row: 4;
+      @media ($m-l) {
+        grid-row: 3;
+      }
     }
 
     &-4 {
       grid-row: 5;
+      @media ($m-l) {
+        grid-row: 4;
+      }
     }
 
     &-5 {
       grid-row: 6;
+      @media ($m-l) {
+        grid-row: 5;
+      }
     }
 
     &-6 {
       grid-row: 7;
+      @media ($m-l) {
+        grid-row: 6;
+      }
     }
 
     &-7 {
       grid-row: 8;
+      @media ($m-l) {
+        grid-row: 7;
+      }
     }
 
     &-8 {
       grid-row: 9;
+      @media ($m-l) {
+        grid-row: 8;
+      }
     }
 
     &-9 {
       position: relative;
       grid-row: 10;
+
+      @media ($m-l) {
+        grid-row: 9;
+      }
 
       &::after {
         position: absolute;
@@ -91,7 +139,11 @@
     grid-row-start: 2;
     grid-row-end: 11;
 
-    // grid-row-start: 1;
+    @media ($m-l) {
+    grid-row-start: 1;
+    grid-column: 2;
+
+    }
 
     // grid-column-start: 2;
     // grid-column-end: 3;
