@@ -13,6 +13,10 @@
     padding: 140px 120px;
   }
 
+  @media ($m-xxxl) {
+    padding: 105px 160px 105px 266px;
+  }
+
   &__inner {
     position: relative;
     z-index: 5;
@@ -28,6 +32,11 @@
       @media ($m-l) {
         margin-top: 25px;
       }
+
+      @media ($m-xxxl) {
+        margin-top: 65px;
+        height: fit-content;
+      }
     }
 
     @media ($m-l) {
@@ -39,12 +48,21 @@
     @media ($m-xl) {
       width: 1400px;
     }
+
+    @media ($m-xxxl) {
+      width: 100%;
+      grid-template-rows: 395px 1fr;
+    }
   }
 
   &__media {
     grid-area: img;
     display: flex;
     justify-content: space-between;
+
+    @media ($m-xxxl) {
+      justify-content: flex-end;
+    }
   }
 
   &__img {
@@ -61,6 +79,11 @@
     @media ($m-l) {
       width: 450px;
       height: 450px;
+    }
+
+    @media ($m-xxxl) {
+      width: 700px;
+      height: 700px;
     }
   }
 

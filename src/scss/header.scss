@@ -35,6 +35,11 @@ header {
     height: 150px;
     padding: 0 120px;
   }
+
+  @media ($m-xxxl) {
+    height: 150px;
+    padding: 0 266px;
+  }
 }
 
 .header {
