@@ -52,6 +52,16 @@ footer {
     @media ($m-l) {
       grid-template-columns: 1fr 600px;
     }
+
+    @media ($m-l) {
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas:
+        ". ."
+        "img text--big"
+        "img text--small"
+        "img heart"
+        "img .";
+    }
   }
 
   &__text {
@@ -104,6 +114,8 @@ footer {
 
     width: 48px;
     height: 48px;
+
+    grid-area: heart;
 
     @media ($m-s) {
       margin-left: auto;
