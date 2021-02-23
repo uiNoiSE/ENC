@@ -13,7 +13,7 @@
 
     @media ($m-l) {
       display: grid;
-      grid-column-gap: 60px;
+      column-gap: 60px;
       grid-template-columns: 700px auto;
       grid-template-areas:
         "weights glyphs"
@@ -141,6 +141,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    & > .svg-icon {
+      @media ($m-xxl) {
+        height: 230px;
+      }
     }
   }
 

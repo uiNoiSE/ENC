@@ -62,6 +62,10 @@
     @media ($m-xl) {
       width: 700px;
     }
+
+    @media ($m-xxl) {
+      width: 850px;
+    }
   }
 
   & > .blob {

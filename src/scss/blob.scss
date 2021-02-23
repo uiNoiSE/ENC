@@ -20,4 +20,9 @@
     width: 500px;
     height: 500px;
   }
+
+  @media ($m-xxl) {
+    width: 600px;
+    height: 600px;
+  }
 }

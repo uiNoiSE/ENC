@@ -9,6 +9,10 @@
     padding: 100px;
   }
 
+  @media ($m-xl) {
+    padding: 140px 120px;
+  }
+
   &__inner {
     position: relative;
     z-index: 5;

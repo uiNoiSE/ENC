@@ -16,6 +16,10 @@ footer {
     height: 100vh;
     padding: 120px 120px 80px 60px;
   }
+
+  @media ($m-xxl) {
+    padding: 100px 120px 80px 60px;
+  }
 }
 
 .footer {
@@ -62,6 +66,10 @@ footer {
         "img heart"
         "img .";
     }
+
+    @media ($m-xxl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__text {
@@ -80,6 +88,11 @@ footer {
 
       @media ($m-l) {
         font-size: 62px;
+      }
+
+      @media ($m-xxl) {
+        font-size: 72px;
+        line-height: 92px;
       }
     }
 
@@ -101,6 +114,11 @@ footer {
         font-size: 120px;
         line-height: 90px;
       }
+
+      @media ($m-l) {
+        font-size: 144px;
+        line-height: 92px;
+      }
     }
 
     &-wrap {
@@ -119,6 +137,11 @@ footer {
 
     @media ($m-s) {
       margin-left: auto;
+    }
+
+    @media ($m-xxl) {
+      width: 104px;
+      height: 104px;
     }
 
     & > img {
@@ -163,6 +186,10 @@ footer {
 
     @media ($m-l) {
       height: 400px;
+    }
+
+    @media ($m-xxl) {
+      height: 600px;
     }
 
     & > img {

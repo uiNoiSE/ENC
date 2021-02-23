@@ -14,6 +14,10 @@
       grid-template-columns: 565px 1fr;
     }
 
+    @media ($m-xxl) {
+      column-gap: 100px;
+    }
+
     & > .text {
       display: flex;
       flex-direction: column;
