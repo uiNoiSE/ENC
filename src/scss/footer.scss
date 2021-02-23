@@ -11,6 +11,11 @@ footer {
   @media ($m-mm) {
     padding: 100px 60px;
   }
+
+  @media ($m-l) {
+    height: 100vh;
+    padding: 120px 120px 80px 60px;
+  }
 }
 
 .footer {
@@ -43,6 +48,10 @@ footer {
 
       grid-template-columns: 500px 320px;
     }
+
+    @media ($m-l) {
+      grid-template-columns: 1fr 600px;
+    }
   }
 
   &__text {
@@ -58,6 +67,10 @@ footer {
       @media ($m-s) {
         font-size: 34px;
       }
+
+      @media ($m-l) {
+        font-size: 62px;
+      }
     }
 
     &--big {
@@ -72,6 +85,11 @@ footer {
 
         font-size: 64px;
         line-height: 60px;
+      }
+
+      @media ($m-l) {
+        font-size: 120px;
+        line-height: 90px;
       }
     }
 
@@ -127,8 +145,12 @@ footer {
       height: 300px;
     }
 
-    @media ($m-s) {
+    @media ($m-mm) {
       height: 350px;
+    }
+
+    @media ($m-l) {
+      height: 400px;
     }
 
     & > img {
@@ -158,6 +180,11 @@ footer {
 
       width: 100%;
       height: auto;
+    }
+
+    @media ($m-l) {
+      bottom: 0;
+      right: 0;
     }
   }
 }
