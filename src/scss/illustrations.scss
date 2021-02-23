@@ -48,19 +48,10 @@
     }
   }
 
-  &__blob {
-    position: absolute;
+  & > .blob {
     right: -90px;
     top: 33px;
 
-    width: 258px;
-    height: 252px;
-
     color: $c-mint;
-
-    @media ($m-s) {
-      width: 400px;
-      height: 400px;
-    }
   }
 }

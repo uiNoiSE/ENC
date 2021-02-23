@@ -1,0 +1,18 @@
+.blob {
+  position: absolute;
+
+  width: 258px;
+  height: 252px;
+
+  color: $c-white;
+
+  @media ($m-s) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @media ($m-l) {
+    width: 400px;
+    height: 400px;
+  }
+}
