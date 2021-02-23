@@ -57,7 +57,10 @@
 
     @media ($m-l) {
       width: 650px;
+    }
 
+    @media ($m-xl) {
+      width: 700px;
     }
   }
 

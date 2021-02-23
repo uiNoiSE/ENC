@@ -16,12 +16,22 @@
       grid-column-gap: 70px;
     }
 
+    @media ($m-xl) {
+      grid-template-columns: 620px 565px;
+      grid-template-areas: "illustrations text";
+      grid-column-gap: 70px;
+    }
+
     & > .text {
       @media ($m-mm) {
         grid-area: text;
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+
+      @media ($m-xl) {
+        margin-bottom: 100px;
       }
     }
   }
@@ -39,6 +49,10 @@
     @media ($m-mm) {
       grid-area: illustrations;
     }
+
+    @media ($m-xl) {
+      row-gap: 70px;
+    }
   }
 
   &__img {
@@ -55,6 +69,10 @@
 
     @media ($m-l) {
       max-height: 200px;
+    }
+
+    @media ($m-xl) {
+      max-height: 290px;
     }
   }
 

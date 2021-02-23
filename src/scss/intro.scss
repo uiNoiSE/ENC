@@ -5,6 +5,10 @@
     padding: 20px 60px 60px;
   }
 
+  @media ($m-xl) {
+    padding: 100px;
+  }
+
   &__inner {
     position: relative;
     z-index: 5;
@@ -26,6 +30,10 @@
       grid-template-areas:
         "text img"
         "showreel img";
+    }
+
+    @media ($m-xl) {
+      width: 1400px;
     }
   }
 

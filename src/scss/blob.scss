@@ -15,4 +15,9 @@
     width: 400px;
     height: 400px;
   }
+
+  @media ($m-xl) {
+    width: 500px;
+    height: 500px;
+  }
 }
