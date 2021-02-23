@@ -9,6 +9,16 @@
       display: grid;
       grid-template-columns: 525px 1fr;
     }
+
+    @media ($m-l) {
+      grid-template-columns: 565px 1fr;
+    }
+
+    & > .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__media {
