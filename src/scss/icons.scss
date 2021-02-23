@@ -2,6 +2,23 @@
   &__inner {
     position: relative;
     z-index: 1;
+
+    @media ($m-l) {
+      display: grid;
+      grid-template-areas: "icons text";
+      grid-template-columns: auto 565px;
+      grid-column-gap: 80px;
+    }
+
+    & > .text {
+      @media ($m-l) {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+      }
+    }
   }
 
   &__media {
