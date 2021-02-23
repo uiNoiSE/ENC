@@ -5,6 +5,9 @@
   height: 252px;
 
   color: $c-white;
+  & > .svg-icon {
+    overflow: visible;
+  }
 
   @media ($m-s) {
     width: 400px;
@@ -22,7 +25,7 @@
   }
 
   @media ($m-xxl) {
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
   }
 }

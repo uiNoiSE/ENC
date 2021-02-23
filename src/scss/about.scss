@@ -16,6 +16,11 @@
     grid-template-columns: 1fr 565px;
   }
 
+  @media ($m-xxxl) {
+    padding: 112px 264px 112px 0;
+    column-gap: 50px;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -43,6 +48,10 @@
       @media ($m-mm) {
         margin-left: -30px;
       }
+
+      @media ($m-xxxl) {
+        margin-left: -70px;
+      }
     }
 
     @media ($m-s) {
@@ -66,6 +75,11 @@
     @media ($m-xxl) {
       width: 850px;
     }
+
+    @media ($m-xxxl) {
+      width: 1021.8px;
+      height: 856px;
+    }
   }
 
   & > .blob {
@@ -73,5 +87,10 @@
     top: 33px;
 
     color: $c-white;
+
+    @media ($m-xxxl) {
+      top: 150px;
+      right: -50px;
+    }
   }
 }
