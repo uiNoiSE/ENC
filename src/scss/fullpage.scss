@@ -9,6 +9,10 @@
     padding: 140px 120px 80px;
   }
 
+  @media ($m-xxl) { 
+    padding: 200px 0 100px 0;
+  }
+
   &__inner {
     display: grid;
     grid-template-columns: 1fr;
@@ -35,8 +39,12 @@
     }
 
     @media ($m-l) {
-      grid-template-columns: 566px auto;
-      grid-column-gap: 60px;
+      grid-template-columns: 565px auto;
+      column-gap: 60px;
+    }
+
+    @media ($m-xxxl) {
+      column-gap: 150px;
     }
   }
 
@@ -154,10 +162,6 @@
     @media ($m-l) {
     grid-row-start: 1;
     grid-column: 2;
-
     }
-
-    // grid-column-start: 2;
-    // grid-column-end: 3;
   }
 }

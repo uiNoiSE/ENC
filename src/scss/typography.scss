@@ -3,6 +3,10 @@
 
   background-color: $c-typography-bg;
 
+  @media ($m-xxxl) {
+    padding: 312px 0;
+  }
+
   &__inner {
     position: relative;
     z-index: 1;
@@ -21,6 +25,10 @@
         "fontname glyphs"
         "font-showcase glyphs"
         "text glyphs";
+    }
+
+    @media ($m-xxxl) {
+      column-gap: 225px;
     }
   }
 

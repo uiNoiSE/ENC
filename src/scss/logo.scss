@@ -44,6 +44,17 @@
     @media ($m-xl) {
       padding: 30px 30px 30px 100px;
     }
+
+    @media ($m-xxxl) {
+      padding: 105px 0;
+      margin: auto;
+      margin-right: 200px;
+
+      & > .text {
+        width: 565px;
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__eng-logo {

@@ -1,4 +1,8 @@
 .admin-PA {
+  @media ($m-xxl) { 
+    padding: 200px 0 100px 0;
+  }
+  
   &__inner {
     display: grid;
     grid-template-areas:
