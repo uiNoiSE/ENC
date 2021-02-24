@@ -1,4 +1,8 @@
 .illustrations {
+  @media ($m-xxxl) {
+    padding: 190px 264px;
+  }
+
   &__inner {
     position: relative;
     z-index: 1;
@@ -6,20 +10,24 @@
     @media ($m-mm) {
       display: grid;
       grid-template-columns: 1fr 464px;
-      grid-column-gap: 40px;
+      column-gap: 40px;
       grid-template-areas: "illustrations text";
     }
 
     @media ($m-mm) {
       grid-template-columns: auto 450px 565px;
       grid-template-areas: ". illustrations text";
-      grid-column-gap: 70px;
+      column-gap: 70px;
     }
 
     @media ($m-xl) {
       grid-template-columns: 620px 565px;
       grid-template-areas: "illustrations text";
-      grid-column-gap: 70px;
+      column-gap: 70px;
+    }
+
+    @media ($m-xxxl) {
+      column-gap: 200px;
     }
 
     & > .text {
@@ -32,6 +40,10 @@
 
       @media ($m-xl) {
         margin-bottom: 100px;
+      }
+
+      @media ($m-xxxl) {
+        margin-bottom: 160px;
       }
     }
   }
