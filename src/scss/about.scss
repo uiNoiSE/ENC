@@ -6,11 +6,14 @@
   background-color: $c-mint;
 
   & > .container {
-    width: 1680px;
+    @media ($m-xxxl) {
+      width: 1680px;
+    }
   }
 
-  @media ($m-l) {
+  @media ($m-mm) {
     padding-left: 0;
+    
     & > .container {
       margin-left: 0;
     }
@@ -103,13 +106,13 @@
 
     @media ($m-xxxl) {
       position: relative;
-      width :950px;
+      width: 950px;
       height: 950px;
 
       & > img {
         position: absolute;
         right: 0;
-        
+
         width: 1021.8px;
         height: 856px;
       }

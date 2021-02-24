@@ -19,19 +19,11 @@ main {
     right: 0;
 
     width: 100%;
-    height: 390px;
-  }
-
-  @media ($m-mm) {
-    width: 100%;
-    height: 510px;
+    height: fit-content;
   }
 
   @media ($m-l) {
     bottom: 0;
-    right: 0;
-
-    height: fit-content;
   }
 
   @media ($m-xxxl) {
