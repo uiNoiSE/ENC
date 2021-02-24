@@ -1,6 +1,10 @@
 .mobile {
   background-color: $c-mint;
 
+  @media ($m-xxxl) {
+    padding: 150px 262px;
+  }
+
   &__inner {
     position: relative;
     z-index: 1;
@@ -29,6 +33,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    @media ($m-xxxl) {
+      height: 780px;
+    }
   }
 
   &__photo {
@@ -47,6 +55,15 @@
 
       &:last-of-type {
         padding-top: 150px;
+      }
+    }
+
+    @media ($m-xxxl) {
+      height: 600px;
+
+      &:last-of-type {
+        padding-top: 0;
+        align-self: flex-end;
       }
     }
   }
