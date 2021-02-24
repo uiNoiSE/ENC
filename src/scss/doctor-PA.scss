@@ -4,6 +4,9 @@
   }
   
   &__inner {
+    position: relative;
+    z-index: 1;
+
     display: grid;
     grid-template-areas:
       "text"
@@ -30,11 +33,16 @@
 
     & > .text {
       margin-bottom: 0px;
+
+      @media ($m-xxxl) {
+        margin-bottom: 70px;
+      }
     }
   }
 
   &__img {
     border-radius: 10px;
+    background-color: $c-white;
 
     &:nth-child(2) {
       grid-area: img--big-2;

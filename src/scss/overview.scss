@@ -1,10 +1,29 @@
 .overview {
     display: flex;
     padding: 0;
-    height: 100vh;
     
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @media ($m-l) {
+        height: 100vh;
+
+        & > img {
+            display: none;
+        }
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &--first {
+            background-image: url('../img/desktop-overview.webp');
+        }
+    
+        &--second {
+            background-image: url('../img/mobile-overview.webp');
+        }
+    
+        &--third {
+            background-image: url('../img/ui-overview.webp');
+        }
+    }
 }

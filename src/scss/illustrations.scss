@@ -14,10 +14,10 @@
       grid-template-areas: "illustrations text";
     }
 
-    @media ($m-mm) {
-      grid-template-columns: auto 450px 565px;
-      grid-template-areas: ". illustrations text";
-      column-gap: 70px;
+    @media ($m-l) {
+      grid-template-columns: 1fr 565px;
+      grid-template-areas: "illustrations text";
+      column-gap: 130px;
     }
 
     @media ($m-xl) {
@@ -76,7 +76,7 @@
     }
 
     @media ($m-s) {
-      max-height: 300px;
+      max-height: 250px;
     }
 
     @media ($m-l) {

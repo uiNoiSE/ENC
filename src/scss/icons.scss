@@ -18,13 +18,14 @@
     @media ($m-l) {
       display: grid;
       grid-template-areas: "icons text";
-      grid-template-columns: auto 565px;
-      column-gap: 80px;
+      grid-template-columns: 484px 565px;
+      
+      column-gap: 90px;
     }
 
-    @media ($m-l) {
-      grid-template-columns: 690px 565px;
-      column-gap: 150px;
+    @media ($m-xl) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 130px;
     }
 
     @media ($m-xxxl) {
@@ -64,6 +65,11 @@
     align-items: center;
 
     @media ($m-s) {
+      width: auto;
+      height: 150px;
+    }
+
+    @media ($m-l) {
       width: auto;
       height: 150px;
     }

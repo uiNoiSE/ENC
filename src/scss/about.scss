@@ -5,9 +5,25 @@
 
   background-color: $c-mint;
 
+  & > .container {
+    width: 1680px;
+  }
+
+  @media ($m-l) {
+    padding-left: 0;
+    & > .container {
+      margin-left: 0;
+    }
+  }
+
   @media ($m-xxxl) {
-    // padding: 112px 264px 112px 0;
     padding: 112px 0;
+  }
+
+  @media ($m-2k) {
+    & > .container {
+      margin-left: auto;
+    }
   }
 
   &__inner {
@@ -33,10 +49,11 @@
 
     @media ($m-l) {
       grid-template-columns: 1fr 565px;
+      column-gap: 50px;
     }
 
     @media ($m-xxxl) {
-      grid-template-columns: 670px auto;
+      grid-template-columns: 950px auto;
       column-gap: 150px;
     }
   }
@@ -73,7 +90,7 @@
     }
 
     @media ($m-l) {
-      width: 650px;
+      width: 600px;
     }
 
     @media ($m-xl) {
@@ -86,8 +103,8 @@
 
     @media ($m-xxxl) {
       position: relative;
-      width :670px;
-      height: 856px;
+      width :950px;
+      height: 950px;
 
       & > img {
         position: absolute;

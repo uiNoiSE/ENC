@@ -14,11 +14,19 @@ footer {
 
   @media ($m-l) {
     height: 100vh;
-    padding: 120px 120px 80px 60px;
+    padding: 120px 0;
+  }
+
+  @media ($m-xl) {
+    padding: 150px 0;
   }
 
   @media ($m-xxl) {
-    padding: 100px 120px 80px 60px;
+    padding: 120px 0;
+  }
+
+  @media ($m-xxl) {
+    padding: 140px 0;
   }
 
   @media ($m-xxxl) {
@@ -37,42 +45,29 @@ footer {
 
     display: grid;
     grid-template-areas:
-      "text--big ."
-      "text--small ."
-      "img heart";
+      "text"
+      "img";
 
     @media ($m-s) {
-      grid-template-areas:
-        "img text--big"
-        "img text--small"
-        "img heart"
-        "img .";
+      grid-template-areas: "img text";
 
       grid-template-columns: 1fr 320px;
     }
 
     @media ($m-mm) {
-      grid-template-areas:
-        "img text--big"
-        "img text--small"
-        "img heart"
-        "img .";
+      grid-template-areas: "img text";
 
       grid-template-columns: 500px 320px;
     }
 
     @media ($m-l) {
-      grid-template-columns: 1fr 600px;
+      grid-template-columns: 1fr 500px;
+      grid-template-areas: "img text";
     }
 
-    @media ($m-l) {
-      grid-template-rows: repeat(5, 1fr);
-      grid-template-areas:
-        ". ."
-        "img text--big"
-        "img text--small"
-        "img heart"
-        "img .";
+    @media ($m-xl) {
+      grid-template-columns: 550px 500px;
+      grid-template-areas: "img text";
     }
 
     @media ($m-xxl) {
@@ -132,11 +127,11 @@ footer {
       }
 
       @media ($m-l) {
-        font-size: 120px;
+        font-size: 100px;
         line-height: 90px;
       }
 
-      @media ($m-l) {
+      @media ($m-xl) {
         font-size: 144px;
         line-height: 92px;
       }
@@ -153,12 +148,7 @@ footer {
 
     width: 48px;
     height: 48px;
-
-    grid-area: heart;
-
-    @media ($m-s) {
-      margin-left: auto;
-    }
+    margin-left: auto;
 
     @media ($m-xxl) {
       width: 104px;
@@ -240,19 +230,33 @@ footer {
     right: -22.65px;
 
     width: 431.31px;
-    height: 222.92px;
 
     @media ($m-s) {
       bottom: -5px;
       right: 0;
 
       width: 100%;
-      height: auto;
+      height: 390px;
+    }
+
+    @media ($m-mm) {
+      width: 100%;
+      height: 510px;
     }
 
     @media ($m-l) {
       bottom: 0;
       right: 0;
+
+      height: fit-content;
+    }
+
+    @media ($m-xxxl) {
+      width: 1920px;
+
+      & > img {
+        height: 960px;
+      }
     }
 
     & > img {

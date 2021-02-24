@@ -4,6 +4,9 @@
   }
 
   &__inner {
+    position: relative;
+    z-index: 1;
+
     display: grid;
     grid-template-areas:
       "text"
@@ -38,6 +41,8 @@
 
   &__img {
     border-radius: 10px;
+    background-color: $c-white;
+
 
     & > img {
       border-radius: 10px;

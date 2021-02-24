@@ -67,7 +67,7 @@ module.exports = (env, argv) => {
           ],
         },
         {
-          test: /\.(png|jpg|gif|svg)$/,
+          test: /\.(png|jpg|gif|svg|webp)$/,
           include: path.join(__dirname, 'src', 'img'),
           loader: 'file-loader',
           options: {

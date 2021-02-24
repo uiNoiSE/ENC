@@ -1,19 +1,27 @@
 .fullpage {
   padding-top: 60px;
 
-  @media ($m-l) { 
+  @media ($m-l) {
     padding: 120px 60px 60px;
   }
 
-  @media ($m-xxl) { 
+  @media ($m-xxl) {
     padding: 140px 120px 80px;
   }
 
-  @media ($m-xxl) { 
+  @media ($m-xxl) {
     padding: 200px 0 100px 0;
   }
 
+  @media ($m-xxxl) {
+    & > .container {
+      width: 1500px;
+    }
+  }
+
   &__inner {
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, auto);
@@ -160,8 +168,8 @@
     grid-row-end: 11;
 
     @media ($m-l) {
-    grid-row-start: 1;
-    grid-column: 2;
+      grid-row-start: 1;
+      grid-column: 2;
     }
   }
 }
