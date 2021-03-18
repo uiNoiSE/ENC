@@ -1,3 +1,3 @@
 # ENC - European Nutrition Centre #
 
-Case for [Aleskeroff.ru](https://aleskeroff.ru/) portfolio
+Case for [Aleskeroff.ru](https://aleskeroff.ru/portfolio/enc) portfolio
